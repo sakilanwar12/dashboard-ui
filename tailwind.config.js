@@ -14,7 +14,8 @@ export default {
       'warning': '#ffc107',
       'gray': "#495057",
       'black': "#343a40",
-      "info": "#007bff"
+      "info": "#007bff",
+      "slate":"#f0f0f1"
     },
     extend: {},
   },

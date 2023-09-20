@@ -1,7 +1,10 @@
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Main from './layout/Main'
-import Dashboard from './pages/Dashboard'
+import PostAll from './components/Post/PostAll'
+import AddNewPost from './components/Post/AddNewPost'
+import PostCategories from './components/Post/PostCategories'
+import PostTags from './components/Post/PostTags'
 
 function App() {
   const router = createBrowserRouter([
@@ -10,9 +13,21 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: "/",
-          element: <Dashboard></Dashboard>
-        }
+          path: "/post/all",
+          element: <PostAll></PostAll>
+        },
+        {
+          path: "/post/add",
+          element: <AddNewPost></AddNewPost>
+        },
+        {
+          path: "/post/category",
+          element: <PostCategories></PostCategories>
+        },
+        {
+          path: "/post/tags",
+          element: <PostTags></PostTags>
+        },
       ]
     }
   ])

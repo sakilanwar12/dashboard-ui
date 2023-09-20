@@ -8,12 +8,12 @@ const Main = () => {
     return (
         <>
             <Header></Header>
-            <div className="container-fluid">
+            <div className="container-fluid  ">
                 <div className="flex">
                     <div className="sidebar-area">
                         <Sidebar></Sidebar>
                     </div>
-                    <div className="main-dashboard pt-20 pl-5">
+                    <div className="main-dashboard pt-6 pl-5 pr-5 bg-slate w-full">
                         <Outlet></Outlet>
                     </div>
                 </div>

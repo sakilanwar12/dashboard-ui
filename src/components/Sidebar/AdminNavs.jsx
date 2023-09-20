@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AdminNavs = () => {
     return (
-        <nav>
+        <nav className='relative z-2'>
             <ul>
                 <li className='has-children'>
                     <div className='flex items-center text-base py-2 space-x-3  '>
